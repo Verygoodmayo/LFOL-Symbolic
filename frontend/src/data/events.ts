@@ -36,4 +36,13 @@ export const events: Event[] = [
     tags: ["Study Group", "Lacan", "Desire"],
     primary: false,
   },
-]; 
+  {
+    id: 5,
+    title: "A Lecture By Mark Fisher",
+    date: "2025-07-20",
+    description: "Tonight in the main hall. Hurry he might not be here for long!",
+    image: "/src/assets/event-images/placeholder.png",
+    tags: [],
+    primary: false,
+  },
+],]; 
