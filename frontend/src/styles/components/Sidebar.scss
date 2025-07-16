@@ -1,0 +1,41 @@
+.sidebar {
+  width: 415px;
+  flex-shrink: 0;
+  padding: 30px;
+  background-color: #F8F7F4;
+  border-left: 2px solid #9c8faa;
+  box-sizing: border-box;
+
+  position: sticky;
+  z-index: 150;
+  top: 94px; /* Height of the Menu */
+  height: calc(100vh - 94px);
+  overflow-y: auto;
+
+  &__section {
+    width: 100%;
+    margin-bottom: 60px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-family: 'Futura', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #03040b;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #03040b;
+  }
+
+  &__event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+

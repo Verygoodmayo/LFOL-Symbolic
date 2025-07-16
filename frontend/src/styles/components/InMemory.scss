@@ -1,0 +1,58 @@
+/*
+Old InMemory.scss had extra features:
+- &__background-image (absolute, mask, z-index)
+- &__text-container (extra wrapper)
+- &__body (for text blocks)
+Consider merging these if needed for future design updates.
+*/
+.in-memory {
+  background-color: #eff3f3;
+  padding: 60px 20px;
+  position: relative;
+  border-bottom: 2px solid #9c8faa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 555px;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #03040b;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #03040b;
+    display: inline-block;
+  }
+
+  &__text {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+
+    p {
+      margin: 0 0 1em 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__decorator {
+    width: 21px;
+    height: 22px;
+    border: 1px solid #000; // Simplified from SVG
+    border-radius: 50%;
+  }
+}

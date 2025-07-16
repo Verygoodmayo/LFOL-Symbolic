@@ -1,0 +1,122 @@
+.footer {
+  position: relative;
+  z-index: 200;
+  background-color: #03040b;
+  color: #eff3f3;
+  width: 100%;
+  overflow: hidden;
+
+  &__nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 45px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #eff3f3;
+    margin: 0;
+    line-height: 1;
+  }
+
+  &__nav {
+    width: 100%;
+  }
+
+  &__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__nav-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #eff3f3;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 2px;
+    transition: background 0.2s;
+    &:hover {
+      background: rgba(239, 243, 243, 0.08);
+    }
+    .footer__nav-underline {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #eff3f3;
+      border-radius: 1px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: none;
+      pointer-events: none;
+    }
+    &.selected .footer__nav-underline {
+      transform: scaleX(1);
+      transition: none;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__social-label {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #eff3f3;
+    margin: 0;
+    line-height: 1;
+  }
+
+  &__social-icons {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+  }
+
+  &__texture {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    background: url('http://localhost:3845/assets/85583b39a9bb17cf77c938a734cad3a53f13ae34.png') repeat-x center bottom;
+    background-size: auto 100%;
+    img {
+      display: none;
+    }
+  }
+
+  a {
+    color: #eff3f3;
+    text-decoration: none;
+  }
+} 

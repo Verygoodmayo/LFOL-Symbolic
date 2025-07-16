@@ -1,0 +1,41 @@
+/*
+Old Hero.scss had extra features:
+- &__content, &__subtitle, &__cta (for more classic hero layouts)
+- Simpler background and color scheme
+Consider merging these if needed for future design updates.
+*/
+.hero {
+  height: 266px;
+  width: 100%;
+  background-image: url('../../assets/hero-background.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px 45px;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-family: 'Futura', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #03040b;
+  }
+
+  &__logo {
+    width: 136px;
+    height: 137.5px;
+    
+    img {
+        width: 100%;
+        height: 100%;
+    }
+  }
+} 

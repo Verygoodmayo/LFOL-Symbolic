@@ -1,0 +1,11 @@
+.home-page {
+  background-color: #ebe8ee;
+  // padding: 3rem 2rem;
+
+  &__decorative-banner {
+    height: 331px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid #9c8faa;
+  }
+}
