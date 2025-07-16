@@ -45,4 +45,13 @@ export const events: Event[] = [
     tags: [],
     primary: false,
   },
-],]; 
+  {
+    id: 6,
+    title: "Slavoj Zizek Talk",
+    date: "2025-07-21",
+    description: "Between nose noises he will examine the films of Hitchcock from a Lacanian perspective.",
+    image: "/src/assets/event-images/default.png",
+    tags: [],
+    primary: false,
+  },
+]; 
